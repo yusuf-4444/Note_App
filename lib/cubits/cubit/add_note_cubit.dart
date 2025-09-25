@@ -3,6 +3,8 @@ import 'package:meta/meta.dart';
 
 part 'add_note_state.dart';
 
-class AddNoteCubitCubit extends Cubit<AddNoteCubitState> {
-  AddNoteCubitCubit() : super(AddNoteCubitInitial());
+class AddNoteCubit extends Cubit<AddNoteState> {
+  AddNoteCubit() : super(AddNoteInitial());
+
+  addNote() {}
 }
