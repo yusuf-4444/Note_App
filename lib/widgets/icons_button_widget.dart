@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class IconButtonWidget extends StatelessWidget {
-  const IconButtonWidget({super.key});
+  const IconButtonWidget({super.key, required this.icon});
+
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +12,7 @@ class IconButtonWidget extends StatelessWidget {
       style: IconButton.styleFrom(
         backgroundColor: const Color.fromARGB(255, 53, 47, 47),
       ),
-      icon: Icon(Icons.search),
+      icon: Icon(icon),
     );
   }
 }
