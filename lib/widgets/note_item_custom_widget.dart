@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:note_app/models/note_model.dart';
 import 'package:note_app/views/edit_page_view.dart';
 
@@ -58,7 +59,9 @@ class NoteItem extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(right: 24),
                     child: Text(
-                      note.date.toString(),
+                      DateFormat.yMd()
+                          .format(DateTime.parse(note.date))
+                          .toString(),
                       style: TextStyle(
                         color: const Color.fromARGB(255, 80, 78, 78),
                       ),
