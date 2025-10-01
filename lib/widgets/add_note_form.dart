@@ -52,7 +52,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                         title: title!,
                         subTitle: subTitle!,
                         date: DateTime.now().toString(),
-                        color: Colors.blue.r.toInt(),
+                        color: Colors.blue.toARGB32(),
                       ),
                     );
                   } else {

@@ -18,14 +18,14 @@ class NoteItem extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) {
-              return EditView();
+              return EditView(note: note);
             },
           ),
         );
       },
       child: Container(
         decoration: BoxDecoration(
-          color: Color(0xffFFCC80),
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Padding(
